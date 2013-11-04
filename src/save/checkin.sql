@@ -1,0 +1,28 @@
+CREATE TABLE `checkin` (
+  `id` varchar(64) NOT NULL,
+  `poiid` varchar(64) DEFAULT NULL,
+  `title` varchar(256) DEFAULT NULL,
+  `address` varchar(256) DEFAULT NULL,
+  `longitude` varchar(64) DEFAULT NULL,
+  `latitude` varchar(64) DEFAULT NULL,
+  `category` varchar(64) DEFAULT NULL,
+  `categorys` varchar(64) DEFAULT NULL,
+  `categoryname` varchar(64) DEFAULT NULL,
+  `city` varchar(64) DEFAULT NULL,
+  `province` varchar(64) DEFAULT NULL,
+  `streetsummary` varchar(256) DEFAULT NULL,
+  `url` varchar(64) DEFAULT NULL,
+  `phone` varchar(64) DEFAULT NULL,
+  `postcode` varchar(64) DEFAULT NULL,
+  `weiboid` varchar(64) DEFAULT NULL,
+  `icon` varchar(256) DEFAULT NULL,
+  `checkinnum` int(11) DEFAULT NULL,
+  `checkusernum` int(11) DEFAULT NULL,
+  `tipnum` int(11) DEFAULT NULL,
+  `photonum` int(11) DEFAULT NULL,
+  `todonum` int(11) DEFAULT NULL,
+  `refreshTime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`),
+  KEY `c1` (`category`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
